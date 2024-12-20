@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
-// const socket = io('https://dynamicpricing-production.up.railway.app/');
-const socket = io('http://localhost:5000');
+const socket = io('wss://flask-socketio-railway-backend-production.up.railway.app');
+// const socket = io('http://localhost:5000');
 
 const Counter = () => {
     const [count, setCount] = useState(0);
