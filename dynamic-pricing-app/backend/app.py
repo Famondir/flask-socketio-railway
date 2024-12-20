@@ -23,5 +23,5 @@ def handle_get_value():
     emit('update_count', {'value': current_value})
 
 if __name__ == '__main__':
-    # socketio.run(app, host='0.0.0.0', port=5000)
-    socketio.run(app, debug=True)
+    socketio.run(app)
+    # socketio.run(app, debug=True)
